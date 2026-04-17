@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe1e9; 
+    font-family: sans-serif; 
+}
+
+.cabecalho {
+    background-color: #ff84a1;
+    color: aliceblue; 
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+.cabecalho2 {
+    background-color: #feb4c5;
+    color: aliceblue; 
+    text-align: center; 
+    padding-top: 80px; 
+    padding-bottom: 90px; 
+}
+
+.cabecalho h1 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.cabecalho h2 {
+    font-size: 26px; 
+    margin-top: 20px; 
+}
+
+.meu-menu {
+    text-decoration: none;
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    font-size: 12px; 
+}
+
+.Sobre {
+    display: block; 
+    margin: 20px auto; 
+    margin-bottom: 20px;
+    padding: 10px; 
+    border: 2px solid #e96077; 
+    border-radius: 15px; 
+    outline: none; 
+    width: 1200px; 
+    background-color: #ffffff;
+}
+
+.Sobre h3 {
+    font-size: 18px; 
+    margin-top: 10px; 
+    margin-left: 8px;
+}
+
+.Sobrenho {
+    font-size: 12px; 
+    margin-top: 18px; 
+    margin-left: 8px;
+    margin-bottom: 15px;
+
+}
+
+.Personagens{
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px; 
+    border: 2px solid #e96077; 
+    border-radius: 15px; 
+    outline: none; 
+    width: 1200px; 
+    background-color: #ffffff;
+}
+
+.persona {
+  color: #000000;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+
+.caixa-texto {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 15px; 
+}
+
+.card {
+  background-color: #ffb1c8; 
+  border-radius: 12px;
+  width: 120px; 
+  height: 120px; 
+  padding: 10px; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+  text-decoration: none; 
+  color: inherit; 
+  margin-bottom: 20px;
+}
+
+.txt:hover {
+  transform: scale(1.05);
+}
+
+
+.txt strong {
+  display: block;
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.txt span {
+  display: block;
+  color: #000000;
+  font-size: 13px;
+}
+
+.Galeria{
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px; 
+    border: 2px solid #e96077; 
+    border-radius: 15px; 
+    outline: none; 
+    width: 1200px; 
+    background-color: #ffffff;
+}
+
+.galery {
+  color: #000000;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-bottom: 20px;
+}
+
+.caixa-img {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 15px; 
+}
+
+.card {
+  background-color: #ffb1c8; 
+  border-radius: 12px;
+  padding: 15px; 
+  width: 120px; 
+  height: 120px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-sizing: border-box;
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+  text-decoration: none; 
+  color: inherit; 
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+}
+
+#modal-galeria {
+    margin: auto;          
+    border: 4px solid #e96077;
+    border-radius: 15px;
+    padding: 0;
+    background-color: #fff;
+    max-width: 80%;
+    max-height: 80vh;
+    outline: none;
+}
+
+#modal-galeria::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.conteudo-modal button {
+    background-color: #e96077;  
+    color: white;           
+    border: 2px solid #fff;     
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.conteudo-modal button:hover {
+    background-color: #ffb1c8;
+    transform: scale(1.1);
+}
+
+#img-ampliada {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 10px;
+}
+
+.conteudo-modal {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Formulario{
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px; 
+    border: 2px solid #e96077; 
+    border-radius: 15px; 
+    outline: none; 
+    width: 1200px; 
+    background-color: #ffffff;
+}
+
+.forms{
+    color: #000000;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+.formulario-fofo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 800px; 
+    margin: 20px auto; 
+}
+
+.formulario-fofo input,
+.formulario-fofo textarea {
+    width: 100%;
+    padding: 15px 20px; 
+    border: 2px solid #ffd1dc; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #555; 
+    background-color: #fff;
+    outline: none; 
+    transition: border-color 0.3s ease; 
+}
+
+.formulario-fofo textarea {
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical; 
+}
+
+.formulario-fofo input:focus,
+.formulario-fofo textarea:focus {
+    border-color: #ff9eb5; 
+}
+
+.formulario-fofo input::placeholder,
+.formulario-fofo textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.formulario-fofo button {
+    background-color: #ffb1c8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top: 10px;
+}
+
+.formulario-fofo button:hover {
+    background-color: #ff9eb5;
+    transform: scale(1.02); 
+}
+
+.final {
+    background-color: #ff84a1;
+    color: aliceblue; 
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>🎀Hello Kitty & miguinhos🎀</title>
+        <link rel="stylesheet" href="Kitty.css"> 
+    </head>
+    
+    <body>
+        <header class="cabecalho">
+            <h1>🎀Hello Kitty & miguinhos🎀</h1>
+            
+            <nav class="meu-menu">
+                <a href="#">Sobre</a>
+                <a href="#">Personagens</a>
+                <a href="#">Galeria</a>
+                <a href="#">Entrar</a>
+            </nav>
+        </header>
+        <header class="cabecalho2">
+            <h2>Um mundo cheio de fofura e amizade💞</h2>
+        </header>
+        <header class="Sobre">
+            <h3>Sobre</h3>
+            <nav class="Sobrenho">O universo Hello Kitty é cheio de amizade, carinho e aventuras fofinhas. Cada personagem tem sua própria personalidade encantadora!</nav>
+        </header>
+        <header class="Personagens">
+                <h2 class="persona">Personagens</h2>
+  
+            <div class="caixa-texto">
+                <a href="https://hellokitty.fandom.com/wiki/Hello_Kitty" class="card" target="_blank">
+                    <strong>Hello Kitty</strong>
+                    <span>Gentil e adorável 🎀</span>
+            </a>
+
+            <a href="https://hellokitty.fandom.com/wiki/My_Melody" class="card" target="_blank">
+                <strong>My Melody</strong>
+                <span>Doce e amigável 🐰</span>
+            </a>
+
+            <a href="https://hellokitty.fandom.com/wiki/Kuromi" class="card" target="_blank">
+                <strong>Kuromi</strong>
+                <span>Travessa e estilosa 😈</span>
+            </a>
+
+            <a href="https://hellokitty.fandom.com/wiki/Cinnamoroll" class="card" target="_blank">
+                <strong>Cinnamoroll</strong>
+                <span>Fofo e tímido ☁️</span>
+            </a>
+
+            <a href="https://hellokitty.fandom.com/wiki/Pompompurin" class="card" target="_blank">
+                <strong>Pompompurin</strong>
+                <span>Relaxado e fofo 🍮</span>
+            </a>
+
+            <a href="https://hellokitty-fandom-com.translate.goog/wiki/Bad_Badtz-Maru?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc" class="card" target="_blank">
+                <strong>Badtz-Maru</strong>
+                <span>Rebelde e engraçado 🐧</span>
+            </a>
+
+            <a href="https://hellokitty.fandom.com/wiki/Kerokerokeroppi" class="card" target="_blank">
+                <strong>Keroppi</strong>
+                <span>Alegre e aventureiro 🐸</span>
+            </a>
+
+            <a href="https://hellokitty.fandom.com/wiki/Pochacco" class="card" target="_blank">
+                <strong>Pochacco</strong>
+                <span>Curioso e desajeitado 🐶</span>
+            </a>
+            </div>
+        </header>
+        <header class="Galeria">
+    <h2 class="galery">Galeria</h2>
+  
+    <div class="caixa-img">
+        
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/5/52/Sanrio_Characters_Hello_Kitty_Image026.png/revision/latest?cb=20250110105831" alt="Hello Kitty" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/2/23/Sanrio_Characters_My_Melody_Image030.png/revision/latest?cb=20170407005355" alt="My Melody" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/6/6d/List-kuromi.png/revision/latest?cb=20250922232527" alt="Kuromi" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/a/a5/Mv-cinnamon.png/revision/latest/scale-to-width-down/1000?cb=20250930161135" alt="Cinnamoroll" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/3/30/Sanrio_Characters_Pompompurin_Image006.png/revision/latest?cb=20170401200050" alt="Pompompurin" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/b/b1/List-badtzmaru-1.png/revision/latest?cb=20250927221332" alt="Badtz-Maru" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/c/c4/List-kerokerokeroppi.png/revision/latest?cb=20251102192805" alt="Keroppi" onclick="abrirModal(this.src)">
+        </div>
+
+        <div class="card">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/f/f4/List-Pochacco.png/revision/latest?cb=20251005042623" alt="Pochacco" onclick="abrirModal(this.src)">
+        </div>
+        
+    </div> </header>
+    <header class="Formulario">
+        <h1 class="forms">Entre no Fã Clube!</h1>
+        <form class="formulario-fofo" action="#" method="POST" onsubmit="enviarFormulario(event)">
+  
+            <input type="text" placeholder="Seu nome" required>
+  
+            <input type="email" placeholder="Seu email" required>
+  
+            <textarea placeholder="Mensagem fofinha 💌" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem 🎀</button>
+
+        </form>
+    </header>
+    <dialog id="modal-galeria">
+        <div class="conteudo-modal">
+            <button onclick="fecharModal()">X</button>
+    
+            <img id="img-ampliada" src="" alt="Imagem Expandida">
+        </div>
+        </dialog>
+        <script src="galeria.js"></script>
+    
+    <header class="final">
+        <p style="position: center;">Feito por Davi!</p>
+
+    </header>
+    </body>
+
+</html>
