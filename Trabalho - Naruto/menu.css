@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+*, *::before, *::after { cursor: none !important; }
+
+.cursor { position: fixed; width: 16px; height: 16px; background: #ff6a00; border-radius: 50%; pointer-events: none; z-index: 99999; transform: translate(-50%, -50%); transition: width 0.2s, height 0.2s, background 0.2s; mix-blend-mode: difference; }
+.cursor.hovered { width: 36px; height: 36px; background: #ff6a00aa; }
+.cursor-trail { position: fixed; width: 32px; height: 32px; border: 2px solid #ff6a00; border-radius: 50%; pointer-events: none; z-index: 99998; transform: translate(-50%, -50%); transition: left 0.12s ease, top 0.12s ease; opacity: 0.5; }
+
+body { font-family: 'Crimson Text', Georgia, serif; font-size: 17px; line-height: 1.7; color: #1a1005; background-color: #0a0804; background-image: url("https://fazendoanossafesta.com.br/wp-content/uploads/2021/10/Painel-Quadrado-Naruto-Painel-Festa-Naruto-1.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center top; background-attachment: fixed; min-height: 100vh; }
+
+/* ═══════════════════════════════════════
+   LINKS DO FANDOM (WIKI-LINK)
+═══════════════════════════════════════ */
+a.wiki-link {
+    color: #d68900; /* Dourado/Amarelo escuro legível */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: bold;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+a.wiki-link:hover, a.wiki-link:focus {
+    color: #ffaa00; /* Amarelo claro no hover */
+    text-decoration-color: #ffaa00;
+}
+
+/* ═══════════════════════════════════════
+   HEADER / TOPO
+═══════════════════════════════════════ */
+.site-header { background: linear-gradient(180deg, rgba(10,8,4,0.92) 0%, rgba(20,15,5,0.85) 100%); border-bottom: 3px solid #c8860a; padding-bottom: 0; }
+.logo-titulo { display: flex; margin: 0 auto; gap: 0px; justify-content: center; align-items: flex-end; flex-wrap: wrap; padding-top: 16px; max-width: 1200px; }
+.header-char { height: 280px; width: auto; filter: drop-shadow(0 0 18px rgba(255,106,0,0.5)); transition: filter 0.3s; }
+.header-char:hover { filter: drop-shadow(0 0 32px rgba(255,106,0,0.85)); }
+.left-char { transform: scaleX(1); }
+.right-char { transform: scaleX(1); }
+.header-logo { height: 180px; width: auto; filter: drop-shadow(0 0 24px rgba(255,180,0,0.6)); margin-bottom: 12px; }
+
+.main-nav { background: rgba(0,0,0,0.7); border-top: 1px solid #c8860a55; text-align: center; }
+.main-nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+.main-nav ul li a { display: block; padding: 14px 28px; color: #e8d08a; text-decoration: none; font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; transition: color 0.25s, background 0.25s; }
+.main-nav ul li a:hover { color: #ff9a00; background: rgba(255,106,0,0.08); }
+
+/* ═══════════════════════════════════════
+   MAIN / LAYOUT GERAL
+═══════════════════════════════════════ */
+main { max-width: 1240px; margin: 40px auto; padding: 0 20px; display: flex; flex-direction: column; gap: 40px; }
+.section-title-bar { display: flex; align-items: center; gap: 12px; background: linear-gradient(90deg, #8b3a00 0%, #c8680a 40%, rgba(200,104,10,0) 100%); border-left: 5px solid #ff9a00; padding: 10px 20px; border-radius: 4px 0 0 4px; margin-bottom: 16px; }
+.section-title-bar h2 { font-family: 'Cinzel', serif; font-size: 22px; color: #fff5db; text-shadow: 0 2px 8px rgba(0,0,0,0.7); margin: 0; }
+.section-icon { font-size: 22px; }
+
+.wiki-content-box { background: rgba(255,253,245,0.93); border: 1px solid #c8860a55; border-radius: 6px; padding: 28px 32px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); }
+.wiki-content-box p { margin-bottom: 14px; color: #2a1e0a; }
+.wiki-content-box::after { content: ""; display: table; clear: both; }
+
+/* ═══════════════════════════════════════
+   IMAGENS ESTILIZADAS E INFOBOX
+═══════════════════════════════════════ */
+.infobox { float: right; width: 240px; margin: 0 0 20px 28px; border: 1px solid #b8860b; border-radius: 6px; overflow: hidden; background: #fffbf0; box-shadow: 2px 2px 12px rgba(0,0,0,0.18); font-size: 14px; }
+.infobox-title { background: #8b3a00; color: #fff5db; text-align: center; padding: 8px 12px; font-family: 'Cinzel', serif; font-size: 14px; font-weight: 700; }
+.infobox-table { width: 100%; border-collapse: collapse; }
+.infobox-table th, .infobox-table td { padding: 5px 10px; border-top: 1px solid #e8d08a55; vertical-align: top; color: #2a1e0a; font-size: 13px; }
+.infobox-table th { background: #fff3d0; font-family: 'Cinzel', serif; font-size: 11px; font-weight: 700; color: #6b3a00; }
+
+.img-capa-fixa { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; border: 2px solid #c8860a; background: #111; transition: transform 0.3s, filter 0.3s; }
+.img-infobox { width: 200px; height: 280px; object-fit: cover; display: block; margin: 10px auto; border-radius: 4px; border: 1px solid #c8860a; background: #111; transition: transform 0.3s, filter 0.3s; }
+.img-char-card { width: 160px; height: 160px; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); margin-bottom: 15px; display: block; transition: transform 0.3s, filter 0.3s; }
+.img-galeria { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; border: 2px solid #c8860a44; transition: transform 0.25s, box-shadow 0.25s, filter 0.3s; }
+
+.img-capa-fixa:hover, .img-infobox:hover, .img-char-card:hover, .img-galeria:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1) drop-shadow(0 0 10px rgba(200, 134, 10, 0.5));
+}
+
+/* ═══════════════════════════════════════
+   MENU E CARDS DE PERSONAGENS
+═══════════════════════════════════════ */
+.char-nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 30px; padding: 15px; background: rgba(232, 208, 138, 0.2); border-radius: 8px; border: 1px solid #e8d08a; }
+.char-nav-btn { background: #fffbf0; border: 1px solid #c8860a; color: #6b3a00; padding: 8px 14px; font-family: 'Cinzel', serif; font-size: 12px; font-weight: bold; cursor: pointer; transition: 0.2s; border-radius: 4px; }
+.char-nav-btn:hover { background: #ffcc66; color: #4a1a00; }
+.char-nav-btn.active { background: #8b3a00; color: #fff5db; border-color: #5a2000; box-shadow: 0 0 10px rgba(139, 58, 0, 0.4); }
+
+.char-panel { display: none; animation: fadeIn 0.4s ease; }
+.char-panel.active-panel { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.personagem-card { background: rgba(255,253,245,0.95); border: 1px solid #c8860a55; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.2); max-width: 600px; margin: 0 auto; }
+.card-header { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; position: relative; }
+
+.bg-time7 { background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%); }
+.bg-sasuke { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #533483 100%); }
+.bg-sakura { background: linear-gradient(135deg, #f953c6 0%, #b91d73 100%); }
+.bg-time8 { background: linear-gradient(135deg, #373737 0%, #7f7f7f 100%); }
+.bg-time10 { background: linear-gradient(135deg, #4a235a 0%, #76448a 100%); }
+.bg-timeguy { background: linear-gradient(135deg, #134e5e 0%, #71b280 100%); }
+.bg-suna { background: linear-gradient(135deg, #8e7136 0%, #c4a45c 100%); }
+.bg-vilao { background: linear-gradient(135deg, #2b0000 0%, #5a0000 100%); }
+
+.toggle-img-btn { background: #fff3d0; border: 2px solid #6b3a00; color: #6b3a00; padding: 4px 12px; font-family: 'Cinzel', serif; font-size: 11px; font-weight: bold; border-radius: 4px; transition: 0.2s; text-transform: uppercase; cursor: pointer; }
+.toggle-img-btn:hover { background: #6b3a00; color: #fff3d0; }
+
+.card-body { padding: 16px 20px 20px; }
+.card-body h3 { font-family: 'Cinzel', serif; font-size: 20px; color: #4a1a00; text-align: center; margin-bottom: 6px; }
+.tags-container { text-align: center; margin-bottom: 10px; }
+.card-tag { display: inline-block; background: #8b3a00; color: #fff5db; font-size: 11px; padding: 2px 10px; border-radius: 20px; font-family: 'Cinzel', serif; margin-bottom: 10px; }
+
+.char-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 14px; }
+.char-table th, .char-table td { padding: 6px 8px; border-top: 1px solid #e8d08a55; text-align: left; color: #2a1e0a; }
+.char-table th { background: #fff3d0; color: #6b3a00; font-family: 'Cinzel', serif; font-size: 12px; width: 110px; }
+
+.card-desc { font-size: 14px; color: #3a2a10; margin-bottom: 12px; line-height: 1.5; }
+.card-jutsus { font-size: 13px; color: #4a1a00; }
+.card-jutsus strong { display: block; margin-bottom: 6px; }
+.jutsu-tag { display: inline-block; background: #fff3d0; border: 1px solid #c8860a; color: #6b3a00; font-size: 12px; padding: 2px 8px; border-radius: 4px; margin: 2px 3px 2px 0; }
+
+/* ═══════════════════════════════════════
+   ARCOS & MUNDO & FOOTER
+═══════════════════════════════════════ */
+.arcos-lista { display: flex; flex-direction: column; }
+.arco-item { display: flex; gap: 20px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid #e8d08a66; }
+.arco-item:last-child { border-bottom: none; }
+.arco-eps { min-width: 80px; background: #8b3a00; color: #fff5db; font-family: 'Cinzel', serif; font-size: 11px; padding: 4px 8px; border-radius: 4px; text-align: center; white-space: nowrap; margin-top: 4px; }
+.arco-info h4 { font-family: 'Cinzel', serif; font-size: 15px; color: #4a1a00; margin-bottom: 6px; }
+
+.mundo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+.mundo-card { background: #fffbf0; border: 1px solid #c8860a55; border-left: 4px solid #c8860a; border-radius: 6px; padding: 16px 18px; }
+.mundo-card h4 { font-family: 'Cinzel', serif; font-size: 14px; color: #5a2a00; margin-bottom: 8px; }
+
+.galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+
+.site-footer { background: rgba(10,8,4,0.92); border-top: 2px solid #c8860a; color: #c8a060; text-align: center; padding: 22px 20px; font-size: 14px; font-family: 'Cinzel', serif; margin-top: 20px; }
+
+/* ═══════════════════════════════════════
+   MODAL DE IMAGENS (ESTILO FANDOM)
+═══════════════════════════════════════ */
+.modal { display: none; position: fixed; z-index: 99990; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(10, 8, 4, 0.90); backdrop-filter: blur(8px); opacity: 0; transition: opacity 0.3s ease; }
+.modal.show { display: flex; justify-content: center; align-items: center; opacity: 1; }
+.modal-content { max-width: 90%; max-height: 85vh; border: 3px solid #c8860a; border-radius: 8px; box-shadow: 0 0 40px rgba(200, 134, 10, 0.6); animation: zoomModal 0.3s ease; object-fit: contain; }
+
+@keyframes zoomModal { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.modal-close { position: absolute; top: 30px; right: 40px; color: #e8d08a; font-size: 50px; font-weight: bold; transition: color 0.3s; font-family: 'Cinzel', serif; }
+.modal-close:hover, .modal-close:focus { color: #ff9a00; }
+
+@media (max-width: 900px) { .infobox { float: none; width: 100%; margin: 0 0 20px 0; } .img-infobox { width: 100%; height: auto; max-height: 400px; } }

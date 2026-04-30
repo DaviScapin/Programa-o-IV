@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Clássico Wiki</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <header class="site-header">
+        <div class="logo-titulo">
+            <img class="header-char left-char" src="narutotlt.png" alt="Naruto">
+            <img class="header-logo" src="pngegg.png" alt="Naruto Logo">
+            <img class="header-char right-char" src="sasuketlt.png" alt="Sasuke">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#arcos">Arcos</a></li>
+                <li><a href="#mundo">Mundo Ninja</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre" class="wiki-section">
+            <div class="section-title-bar">
+                <span class="section-icon">📖</span>
+                <h2>Sobre Naruto Clássico</h2>
+            </div>
+            <div class="wiki-content-box">
+                
+                <img class="img-capa-fixa" src="capinha.jpg" alt="Naruto Capa">
+
+                <div class="infobox">
+                    <div class="infobox-title">Naruto Clássico</div>
+                    
+                    <img class="img-infobox" id="naruto-box-img" 
+                         src="anime-c.jpg" 
+                         data-anime="anime-c.jpg" 
+                         data-manga="manga-c.jpg" 
+                         data-current-type="anime" 
+                         alt="Capa Box">
+                    
+                    <button class="toggle-img-btn" style="margin: 0 auto 10px; display: block;" onclick="alternarBox(this)">Ver Mangá</button>
+                    
+                    <table class="infobox-table">
+                        <tr><th>Criador</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Masashi_Kishimoto" target="_blank" class="wiki-link">Masashi Kishimoto</a></td></tr>
+                        <tr><th>Lançamento</th><td>3 de outubro de 2002</td></tr>
+                        <tr><th>Episódios</th><td>220 episódios</td></tr>
+                        <tr><th>Gênero</th><td>Ação, Aventura, Fantasia</td></tr>
+                        <tr><th>Estúdio</th><td>Studio Pierrot</td></tr>
+                    </table>
+                </div>
+
+                <p>Lançado originalmente em 2002 e baseado no mangá de <a href="https://naruto.fandom.com/pt-br/wiki/Masashi_Kishimoto" target="_blank" class="wiki-link">Masashi Kishimoto</a>, Naruto Clássico é a porta de entrada para um dos universos mais ricos e influentes da cultura pop. A história nos transporta para um mundo dividido em nações e vilas ocultas, onde os ninjas não são apenas mercenários, mas a principal força militar e política de seus países.</p>
+                
+                <p>A narrativa foca na <a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Vila Oculta da Folha (Konohagakure)</a>. Doze anos antes do início da série, a vila foi atacada por uma criatura lendária: a <a href="https://naruto.fandom.com/pt-br/wiki/Kurama" target="_blank" class="wiki-link">Raposa de Nove Caudas</a>. Para salvar o povo, o <a href="https://naruto.fandom.com/pt-br/wiki/Hokage" target="_blank" class="wiki-link">Hokage</a> selou a besta letal dentro de um bebê recém-nascido, o nosso protagonista <a href="https://naruto.fandom.com/pt-br/wiki/Naruto_Uzumaki" target="_blank" class="wiki-link">Naruto Uzumaki</a>.</p>
+                
+                <p>Crescendo como um pária rejeitado pelos adultos, Naruto busca reconhecimento através de seu grande sonho: tornar-se o próximo <a href="https://naruto.fandom.com/pt-br/wiki/Hokage" target="_blank" class="wiki-link">Hokage</a>, o líder supremo da Vila. A obra acompanha sua jornada de sobrevivência no mundo ninja cruel, lidando com missões de rank letal e o duro <a href="https://naruto.fandom.com/pt-br/wiki/Exames_Ch%C5%ABnin" target="_blank" class="wiki-link">Exame Chūnin</a>, provando que trabalho duro e laços de amizade podem mudar o destino de qualquer ninja.</p>
+
+                <p>Ao lado de seus companheiros do <a href="https://naruto.fandom.com/pt-br/wiki/Time_7" target="_blank" class="wiki-link">Time 7</a> — o frio e vingativo <a href="https://naruto.fandom.com/pt-br/wiki/Sasuke_Uchiha" target="_blank" class="wiki-link">Sasuke Uchiha</a> e a extremamente inteligente <a href="https://naruto.fandom.com/pt-br/wiki/Sakura_Haruno" target="_blank" class="wiki-link">Sakura Haruno</a> —, sob a tutela do lendário ninja copiador <a href="https://naruto.fandom.com/pt-br/wiki/Kakashi_Hatake" target="_blank" class="wiki-link">Kakashi Hatake</a>, Naruto aprende o verdadeiro significado de lutar por quem se ama. A transição da infância para a dura realidade militar é marcada por perdas e pelo confronto de diferentes filosofias.</p>
+
+                <p>A série clássica se destaca por suas batalhas altamente estratégicas, onde o uso inteligente de <a href="https://naruto.fandom.com/pt-br/wiki/Chakra" target="_blank" class="wiki-link">Chakra</a> através de <a href="https://naruto.fandom.com/pt-br/wiki/Ninjutsu" target="_blank" class="wiki-link">Ninjutsu</a>, <a href="https://naruto.fandom.com/pt-br/wiki/Taijutsu" target="_blank" class="wiki-link">Taijutsu</a> e ilusões de <a href="https://naruto.fandom.com/pt-br/wiki/Genjutsu" target="_blank" class="wiki-link">Genjutsu</a> definem o vencedor de cada embate. A constante ameaça de organizações criminosas e antagonistas icônicos, como o sádico <a href="https://naruto.fandom.com/pt-br/wiki/Orochimaru" target="_blank" class="wiki-link">Orochimaru</a>, testa não apenas a força física, mas os limites e morais de toda a nova geração da Folha.</p>
+            </div>
+        </section>
+
+        <section id="personagens" class="wiki-section">
+            <div class="section-title-bar">
+                <span class="section-icon">👤</span>
+                <h2>Menu de Personagens</h2>
+            </div>
+            
+            <div class="wiki-content-box">
+                <p style="text-align: center; margin-bottom: 20px; font-size: 14px;">Selecione um personagem abaixo para visualizar seus detalhes baseados no Databook.</p>
+                
+                <div class="char-nav">
+                    <button class="char-nav-btn active" onclick="abrirPersonagem('char-naruto')">Naruto</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-sasuke')">Sasuke</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-sakura')">Sakura</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-kakashi')">Kakashi</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-hinata')">Hinata</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-kiba')">Kiba</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-shino')">Shino</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-kurenai')">Kurenai</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-shikamaru')">Shikamaru</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-ino')">Ino</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-choji')">Choji</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-asuma')">Asuma</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-lee')">Rock Lee</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-neji')">Neji</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-tenten')">Tenten</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-guy')">Guy</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-gaara')">Gaara</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-temari')">Temari</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-kankuro')">Kankuro</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-hiruzen')">Hiruzen</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-tsunade')">Tsunade</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-jiraiya')">Jiraiya</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-orochimaru')">Orochimaru</button>
+                    <button class="char-nav-btn" onclick="abrirPersonagem('char-zabuza')">Zabuza & Haku</button>
+                </div>
+
+                <div class="char-details">
+                    
+                    <div id="char-naruto" class="char-panel active-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time7">
+                                <img class="img-char-card" src="naruto-a.jpg" data-anime="naruto-a.jpg" data-manga="naruto-m.jpg" data-current-type="anime" alt="Naruto">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Naruto Uzumaki</h3>
+                                <div class="tags-container"><span class="card-tag">Time 7</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Vento" target="_blank" class="wiki-link">Vento</a></td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Ninjutsu" target="_blank" class="wiki-link">Ninjutsu</a> / <a href="https://naruto.fandom.com/pt-br/wiki/Taijutsu" target="_blank" class="wiki-link">Taijutsu</a></td></tr>
+                                </table>
+                                <p class="card-desc">O protagonista encrenqueiro de Konoha. Possui a <a href="https://naruto.fandom.com/pt-br/wiki/Kurama" target="_blank" class="wiki-link">Raposa de Nove Caudas</a> selada em seu corpo, motivo pelo qual foi evitado na infância. Compensa a falta de talento inicial com chakra colossal e trabalho duro.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Kage Bunshin</span><span class="jutsu-tag">Rasengan</span><span class="jutsu-tag">Invocação (Sapos)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-sasuke" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-sasuke">
+                                <img class="img-char-card" src="sasuke-a.jpg" data-anime="sasuke-a.jpg" data-manga="sasuke-m.jpg" data-current-type="anime" alt="Sasuke">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Sasuke Uchiha</h3>
+                                <div class="tags-container"><span class="card-tag">Time 7</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Fogo" target="_blank" class="wiki-link">Fogo</a>, <a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Rel%C3%A2mpago" target="_blank" class="wiki-link">Relâmpago</a></td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Ninjutsu" target="_blank" class="wiki-link">Ninjutsu</a> / <a href="https://naruto.fandom.com/pt-br/wiki/Genjutsu" target="_blank" class="wiki-link">Genjutsu</a></td></tr>
+                                    <tr><th>Kekkei Genkai</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sharingan" target="_blank" class="wiki-link">Sharingan</a></td></tr>
+                                </table>
+                                <p class="card-desc">Sobrevivente do massacre do Clã Uchiha, é um gênio impulsionado pelo desejo de vingança contra seu irmão Itachi. Abandona a vila em busca do poder de Orochimaru.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Chidori</span><span class="jutsu-tag">Katon: Goukakyuu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-sakura" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-sakura">
+                                <img class="img-char-card" src="sakura-a.jpg" data-anime="sakura-a.jpg" data-manga="sakura-m.jpg" data-current-type="anime" alt="Sakura">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Sakura Haruno</h3>
+                                <div class="tags-container"><span class="card-tag">Time 7</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Terra" target="_blank" class="wiki-link">Terra</a>, <a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_%C3%81gua" target="_blank" class="wiki-link">Água</a></td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Iry%C5%8D_Ninjutsu" target="_blank" class="wiki-link">Iryō Ninjutsu</a></td></tr>
+                                </table>
+                                <p class="card-desc">Uma kunoichi extremamente inteligente com <a href="https://naruto.fandom.com/pt-br/wiki/Chakra" target="_blank" class="wiki-link">controle de chakra</a> perfeito. Inicialmente focada apenas em romance, decide se tornar forte para parar de depender de seus colegas.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Cancelamento de Genjutsu</span><span class="jutsu-tag">Força Aprimorada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-kakashi" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time8">
+                                <img class="img-char-card" src="kakashi-a.jpg" data-anime="kakashi-a.jpg" data-manga="kakashi-m.jpg" data-current-type="anime" alt="Kakashi">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Kakashi Hatake</h3>
+                                <div class="tags-container"><span class="card-tag">Sensei - Time 7</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/J%C5%8Dnin" target="_blank" class="wiki-link">Jōnin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Múltiplos Elementos</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Ninjutsu" target="_blank" class="wiki-link">Ninjutsu</a> Versátil</td></tr>
+                                    <tr><th>Kekkei Genkai</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sharingan" target="_blank" class="wiki-link">Sharingan</a></td></tr>
+                                </table>
+                                <p class="card-desc">Conhecido mundialmente como o "Ninja Copiador". Um líder severo mas protetor que carrega o Sharingan de seu falecido amigo Obito no olho esquerdo.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Raikiri (Corte Relâmpago)</span><span class="jutsu-tag">Invocação (Cães)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-hinata" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time10">
+                                <img class="img-char-card" src="hinata-a.jpg" data-anime="hinata-a.jpg" data-manga="hinata-m.jpg" data-current-type="anime" alt="Hinata">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Hinata Hyuuga</h3>
+                                <div class="tags-container"><span class="card-tag">Time 8</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Fogo" target="_blank" class="wiki-link">Fogo</a>, <a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Rel%C3%A2mpago" target="_blank" class="wiki-link">Relâmpago</a></td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Punho_Gentil" target="_blank" class="wiki-link">Juuken (Punho Suave)</a></td></tr>
+                                    <tr><th>Kekkei Genkai</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Byakugan" target="_blank" class="wiki-link">Byakugan</a></td></tr>
+                                </table>
+                                <p class="card-desc">A herdeira tímida da casa principal do Clã Hyuuga. Sofre com a falta de autoconfiança, mas encontra sua "vontade do fogo" observando a determinação de Naruto.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Passo Gentil</span><span class="jutsu-tag">Oito Trigramas Defesa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-kiba" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time8">
+                                <img class="img-char-card" src="kiba-a.jpg" data-anime="kiba-a.jpg" data-manga="kiba-m.jpg" data-current-type="anime" alt="Kiba">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Kiba Inuzuka</h3>
+                                <div class="tags-container"><span class="card-tag">Time 8</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Terra" target="_blank" class="wiki-link">Terra</a>, Yang</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Ninjutsu" target="_blank" class="wiki-link">Ninjutsu</a> Cooperativo (Feras)</td></tr>
+                                </table>
+                                <p class="card-desc">Sempre acompanhado de seu fiel ninken (cão ninja) Akamaru. Kiba luta com instintos selvagens, sentidos aguçados e ataques físicos velozes.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Presa Sobre Presa</span><span class="jutsu-tag">Mimetismo da Fera</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-shino" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-timeguy">
+                                <img class="img-char-card" src="shino-a.jpg" data-anime="shino-a.jpg" data-manga="shino-m.jpg" data-current-type="anime" alt="Shino">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Shino Aburame</h3>
+                                <div class="tags-container"><span class="card-tag">Time 8</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Terra, Fogo, Yang</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Hijutsu" target="_blank" class="wiki-link">Hijutsu</a> (Controle de Insetos)</td></tr>
+                                </table>
+                                <p class="card-desc">Misterioso, estóico e analítico. Shino abriga milhares de kikaichū (insetos parasitas) em seu corpo, que usa para drenar chakra e rastrear inimigos silenciosamente.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Clone de Insetos</span><span class="jutsu-tag">Esfera de Insetos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-kurenai" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-vilao">
+                                <img class="img-char-card" src="kureina-a.jpg" data-anime="kureina-a.jpg" data-manga="kurenai-m.jpg" data-current-type="anime" alt="Kurenai">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Kurenai Yuhi</h3>
+                                <div class="tags-container"><span class="card-tag">Sensei - Time 8</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/J%C5%8Dnin" target="_blank" class="wiki-link">Jōnin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Terra, Água</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genjutsu" target="_blank" class="wiki-link">Genjutsu</a> (Ilusão)</td></tr>
+                                </table>
+                                <p class="card-desc">Uma Jounin recém-promovida no Clássico, considerada a maior especialista em Genjutsu de Konoha. Atua como uma figura quase materna para Hinata.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Ilusão da Árvore Morte</span><span class="jutsu-tag">Fuga de Pétalas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-shikamaru" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time8">
+                                <img class="img-char-card" src="shikamaru-a.jpg" data-anime="shikamaru-a.jpg" data-manga="shikamaru-m.jpg" data-current-type="anime" alt="Shikamaru">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Shikamaru Nara</h3>
+                                <div class="tags-container"><span class="card-tag">Time 10</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Ch%C5%ABnin" target="_blank" class="wiki-link">Chūnin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Yin, Terra, Fogo</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Hiden" target="_blank" class="wiki-link">Hiden</a> (Manipulação de Sombras)</td></tr>
+                                </table>
+                                <p class="card-desc">O único Genin promovido a Chunin no Exame. Extremamente preguiçoso, mas possui um QI superior a 200, sendo o maior estrategista de sua geração.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Possessão das Sombras</span><span class="jutsu-tag">Estrangulamento das Sombras</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-ino" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time10">
+                                <img class="img-char-card" src="ino-a.jpg" data-anime="ino-a.jpg" data-manga="ino-m.jpg" data-current-type="anime" alt="Ino">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Ino Yamanaka</h3>
+                                <div class="tags-container"><span class="card-tag">Time 10</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Yin, Terra, Água</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Hiden" target="_blank" class="wiki-link">Hiden</a> (Técnicas Mentais)</td></tr>
+                                </table>
+                                <p class="card-desc">A vaidosa e sincera rival de Sakura. Especialista em inteligência e espionagem usando os jutsus mentais únicos de seu clã para possuir o corpo dos inimigos.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Transferência de Mente</span><span class="jutsu-tag">Perturbação Mental</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-choji" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time7">
+                                <img class="img-char-card" src="choji-a.jpg" data-anime="choji-a.jpg" data-manga="choji-m.jpg" data-current-type="anime" alt="Choji">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Choji Akimichi</h3>
+                                <div class="tags-container"><span class="card-tag">Time 10</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Yang, Terra, Fogo</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Hiden" target="_blank" class="wiki-link">Hiden</a> (Expansão Corporal)</td></tr>
+                                </table>
+                                <p class="card-desc">Gentil e apaixonado por comida. Fica furioso se chamado de "gordo". Pode converter calorias em chakra puro para multiplicar sua massa muscular e tamanho.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Massa Humana</span><span class="jutsu-tag">Expansão Parcial</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-asuma" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-timeguy">
+                                <img class="img-char-card" src="asuma-m.jpg" data-anime="asuma-m.jpg" data-manga="asuma-a.jpg" data-current-type="anime" alt="Asuma">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Asuma Sarutobi</h3>
+                                <div class="tags-container"><span class="card-tag">Sensei - Time 10</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/J%C5%8Dnin" target="_blank" class="wiki-link">Jōnin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Vento" target="_blank" class="wiki-link">Vento</a>, Fogo</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Bukijutsu" target="_blank" class="wiki-link">Bukijutsu</a> (Facas de Trincheira)</td></tr>
+                                </table>
+                                <p class="card-desc">Filho do 3º Hokage. Um Jounin relaxado que fuma constantemente. Canaliza seu chakra elemental de vento em lâminas afiadas para combates de curto alcance.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Andorinha Voadora</span><span class="jutsu-tag">Katon: Nuvem de Cinzas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-lee" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-timeguy">
+                                <img class="img-char-card" src="lee-a.jpg" data-anime="lee-a.jpg" data-manga="lee-m.jpg" data-current-type="anime" alt="Rock Lee">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Rock Lee</h3>
+                                <div class="tags-container"><span class="card-tag">Time Guy</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Nenhum</td></tr>
+                                    <tr><th>Estilo de Luta</th><td>Gōken / <a href="https://naruto.fandom.com/pt-br/wiki/Taijutsu" target="_blank" class="wiki-link">Taijutsu</a> Puro</td></tr>
+                                </table>
+                                <p class="card-desc">Incapaz de usar Ninjutsu ou Genjutsu, Lee dedicou sua vida ao treinamento físico extenuante. A prova viva de que o trabalho duro pode superar o talento natural.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Lótus Primária</span><span class="jutsu-tag">Abertura dos Portões</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-neji" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-suna">
+                                <img class="img-char-card" src="neji-a.jpg" data-anime="neji-a.jpg" data-manga="neji-m.jpg" data-current-type="anime" alt="Neji">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Neji Hyuuga</h3>
+                                <div class="tags-container"><span class="card-tag">Time Guy</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Fogo, Água, Terra</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Punho_Gentil" target="_blank" class="wiki-link">Juuken (Punho Suave)</a></td></tr>
+                                    <tr><th>Kekkei Genkai</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Byakugan" target="_blank" class="wiki-link">Byakugan</a></td></tr>
+                                </table>
+                                <p class="card-desc">O maior prodígio do clã Hyuuga, nascido na casa secundária. Carregava grande ódio e acreditava no destino imutável até ser derrotado por Naruto.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Oito Trigramas 64 Golpes</span><span class="jutsu-tag">Rotação Celestial</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-tenten" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-sakura">
+                                <img class="img-char-card" src="ten-a.jpg" data-anime="ten-a.jpg" data-manga="ten-m.jpg" data-current-type="anime" alt="Tenten">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Tenten</h3>
+                                <div class="tags-container"><span class="card-tag">Time Guy</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Nenhum Destacado</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Bukijutsu" target="_blank" class="wiki-link">Bukijutsu</a> (Armas e Selos)</td></tr>
+                                </table>
+                                <p class="card-desc">Forte admiradora de Tsunade e especialista absoluta em armamento ninja. Carrega dezenas de pergaminhos capazes de invocar furacões de armas instantaneamente.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Dragões Gêmeos Ascendentes</span><span class="jutsu-tag">Invocação de Armas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-guy" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-timeguy">
+                                <img class="img-char-card" src="guy-a.jpg" data-anime="guy-a.jpg" data-manga="guy-m.jpg" data-current-type="anime" alt="Guy">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Might Guy</h3>
+                                <div class="tags-container"><span class="card-tag">Sensei - Time Guy</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/J%C5%8Dnin" target="_blank" class="wiki-link">Jōnin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Fogo, Relâmpago</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Taijutsu" target="_blank" class="wiki-link">Taijutsu</a> Extremo</td></tr>
+                                </table>
+                                <p class="card-desc">O mestre apaixonado da "Força da Juventude" e autoproclamado rival eterno de Kakashi. Ele ensinou a Lee tudo o que sabe sobre os Portões de Chakra e a "Força da Juventude".</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Pavão da Manhã</span><span class="jutsu-tag">Oito Portões Internos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-gaara" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-vilao">
+                                <img class="img-char-card" src="gaara-a.jpg" data-anime="gaara-a.jpg" data-manga="gaara-m.jpg" data-current-type="anime" alt="Gaara">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Gaara do Deserto</h3>
+                                <div class="tags-container"><span class="card-tag">Trio da Areia</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sunagakure" target="_blank" class="wiki-link">Sunagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Vento" target="_blank" class="wiki-link">Vento</a>, Terra, Relâmpago</td></tr>
+                                    <tr><th>Estilo de Luta</th><td>Manipulação de Areia</td></tr>
+                                    <tr><th>Kekkei Genkai</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Jiton" target="_blank" class="wiki-link">Jiton (Magnetismo)</a></td></tr>
+                                </table>
+                                <p class="card-desc">Jinchuuriki de <a href="https://naruto.fandom.com/pt-br/wiki/Shukaku" target="_blank" class="wiki-link">Shukaku</a>. Cresceu como uma arma para sua vila, tornando-se um assassino frio e instável, até que Naruto mostra a ele o significado da compaixão.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Caixão de Areia</span><span class="jutsu-tag">Defesa Absoluta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-temari" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-suna">
+                                <img class="img-char-card" src="tema-a.jpg" data-anime="tema-a.jpg" data-manga="tema-m.jpg" data-current-type="anime" alt="Temari">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Temari</h3>
+                                <div class="tags-container"><span class="card-tag">Trio da Areia</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sunagakure" target="_blank" class="wiki-link">Sunagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Vento" target="_blank" class="wiki-link">Vento</a></td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Tessenjutsu" target="_blank" class="wiki-link">Tessenjutsu</a> (Leque Gigante)</td></tr>
+                                </table>
+                                <p class="card-desc">A irmã mais velha e estratégica do trio da Areia. Utiliza um gigantesco leque de ferro para gerar rajadas de vento cortantes que devastam florestas inteiras.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Foice de Doninha</span><span class="jutsu-tag">Dança dos Ventos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-kankuro" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time10">
+                                <img class="img-char-card" src="kan-a.jpg" data-anime="kan-a.jpg" data-manga="kan-m.jpg" data-current-type="anime" alt="Kankuro">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Kankuro</h3>
+                                <div class="tags-container"><span class="card-tag">Trio da Areia</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sunagakure" target="_blank" class="wiki-link">Sunagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Genin" target="_blank" class="wiki-link">Genin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Vento, Terra, Água</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Kugutsu" target="_blank" class="wiki-link">Kugutsu</a> (Marionetes)</td></tr>
+                                </table>
+                                <p class="card-desc">O irmão do meio, que detesta crianças. É um talentoso mestre de marionetes, usando fios de chakra para controlar bonecos repletos de lâminas e veneno letal.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Técnica da Marionete</span><span class="jutsu-tag">Maquinário de Karasu</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-hiruzen" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time8">
+                                <img class="img-char-card" src="saru-a.jpg" data-anime="saru-a.jpg" data-manga="saru-m.jpg" data-current-type="anime" alt="Hiruzen">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Hiruzen Sarutobi</h3>
+                                <div class="tags-container"><span class="card-tag">Liderança</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td>3º <a href="https://naruto.fandom.com/pt-br/wiki/Hokage" target="_blank" class="wiki-link">Hokage</a></td></tr>
+                                    <tr><th>Elementos</th><td>Todos os Básicos</td></tr>
+                                    <tr><th>Estilo de Luta</th><td>Maestria Total de <a href="https://naruto.fandom.com/pt-br/wiki/Ninjutsu" target="_blank" class="wiki-link">Ninjutsu</a></td></tr>
+                                </table>
+                                <p class="card-desc">Conhecido como o "Professor" e "Deus Shinobi" de sua era. Liderou Konoha com amor e sabedoria, dominando todas as naturezas de chakra da vila.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Invocação: Rei Macaco Enma</span><span class="jutsu-tag">Shiki Fuujin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-tsunade" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-sakura">
+                                <img class="img-char-card" src="tsu-a.jpg" data-anime="tsu-a.jpg" data-manga="tsu-m.jpg" data-current-type="anime" alt="Tsunade">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Tsunade Senju</h3>
+                                <div class="tags-container"><span class="card-tag">Sannin / Liderança</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td>5ª <a href="https://naruto.fandom.com/pt-br/wiki/Hokage" target="_blank" class="wiki-link">Hokage</a></td></tr>
+                                    <tr><th>Elementos</th><td>Relâmpago, Terra, Água, Fogo</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Iry%C5%8D_Ninjutsu" target="_blank" class="wiki-link">Iryō Ninjutsu</a> / Força Monstruosa</td></tr>
+                                </table>
+                                <p class="card-desc">A maior ninja médica do mundo e a kunoichi mais forte de sua geração. Conhecida por seu pavio curto, força devastadora e vício crônico em apostas.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Selo de Força de Uma Centena</span><span class="jutsu-tag">Invocação (Katsuyu)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-jiraiya" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-time7">
+                                <img class="img-char-card" src="jira-a.jpg" data-anime="jira-a.jpg" data-manga="jira-m.jpg" data-current-type="anime" alt="Jiraiya">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Jiraiya</h3>
+                                <div class="tags-container"><span class="card-tag">Sannin Lendário</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Konohagakure" target="_blank" class="wiki-link">Konohagakure</a></td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sannin" target="_blank" class="wiki-link">Sannin</a></td></tr>
+                                    <tr><th>Elementos</th><td>Fogo, Terra, Água, Vento</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Senjutsu" target="_blank" class="wiki-link">Senjutsu</a> / <a href="https://naruto.fandom.com/pt-br/wiki/F%C5%ABinjutsu" target="_blank" class="wiki-link">Fūinjutsu</a></td></tr>
+                                </table>
+                                <p class="card-desc">O Eremita dos Sapos. Um viajante despreocupado e escritor de romances maduros, que se torna a figura paterna e o mestre mais importante na vida de Naruto.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Rasengan Gigante</span><span class="jutsu-tag">Invocação (Sapos)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-orochimaru" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-vilao">
+                                <img class="img-char-card" src="orochi-a.jpg" data-anime="orochi-a.jpg" data-manga="orochi-a.jpg" data-current-type="anime" alt="Orochimaru">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Orochimaru</h3>
+                                <div class="tags-container"><span class="card-tag">Vilão Principal</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Otogakure" target="_blank" class="wiki-link">Otogakure</a> (Ex-Konoha)</td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Sannin" target="_blank" class="wiki-link">Sannin</a> (Nukenin)</td></tr>
+                                    <tr><th>Elementos</th><td>Vento, Raio, Terra, Água, Fogo</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Kinjutsu" target="_blank" class="wiki-link">Kinjutsu</a> (Jutsus Proibidos)</td></tr>
+                                </table>
+                                <p class="card-desc">O cientista sádico expulso de Konoha. Obcecado pela imortalidade e por aprender todos os jutsus do mundo. Manipula Sasuke e invade Konoha para matar seu ex-mestre.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Edo Tensei</span><span class="jutsu-tag">Mãos de Serpente Oculta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="char-zabuza" class="char-panel">
+                        <div class="personagem-card">
+                            <div class="card-header bg-timeguy">
+                                <img class="img-char-card" src="zab-a.jpg" data-anime="zab-a.jpg" data-manga="zab-m.jpg" data-current-type="anime" alt="Zabuza">
+                                <button class="toggle-img-btn" onclick="alternarImagem(this)">Ver Mangá</button>
+                            </div>
+                            <div class="card-body">
+                                <h3>Zabuza & Haku</h3>
+                                <div class="tags-container"><span class="card-tag">Vilões (Arco Ondas)</span></div>
+                                <table class="char-table">
+                                    <tr><th>Vila de Origem</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Kirigakure" target="_blank" class="wiki-link">Kirigakure</a> (Névoa)</td></tr>
+                                    <tr><th>Patente Ninja</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Nukenin" target="_blank" class="wiki-link">Nukenin</a> (Ex-Anbu)</td></tr>
+                                    <tr><th>Elementos</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_%C3%81gua" target="_blank" class="wiki-link">Água</a> (Zabuza) / Gelo (Haku)</td></tr>
+                                    <tr><th>Estilo de Luta</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Kenjutsu" target="_blank" class="wiki-link">Kenjutsu</a> / Assassinato Silencioso</td></tr>
+                                    <tr><th>Kekkei Genkai</th><td><a href="https://naruto.fandom.com/pt-br/wiki/Libera%C3%A7%C3%A3o_de_Gelo" target="_blank" class="wiki-link">Hyōton</a> (Gelo - Haku)</td></tr>
+                                </table>
+                                <p class="card-desc">Os primeiros grandes inimigos do Time 7. Zabuza, o Demônio da Névoa Oculta, e Haku, um jovem leal com a linhagem de gelo. Encontram a humanidade na morte.</p>
+                                <div class="card-jutsus"><strong>Jutsus Notáveis:</strong>
+                                    <span class="jutsu-tag">Ocultação na Névoa</span><span class="jutsu-tag">Espelhos de Cristal de Gelo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: ARCOS -->
+        <section id="arcos" class="wiki-section">
+            <div class="section-title-bar">
+                <span class="section-icon">⚔️</span>
+                <h2>Arcos Principais</h2>
+            </div>
+            <div class="wiki-content-box">
+                <div class="arcos-lista">
+                    <div class="arco-item">
+                        <div class="arco-eps">Eps. 1–19</div>
+                        <div class="arco-info">
+                            <h4>Arco do País das Ondas</h4>
+                            <p>Primeira missão real do Time 7, enfrentando os letais ninjas da Névoa, Zabuza e Haku.</p>
+                        </div>
+                    </div>
+                    <div class="arco-item">
+                        <div class="arco-eps">Eps. 20–67</div>
+                        <div class="arco-info">
+                            <h4>Exame Chunin</h4>
+                            <p>Genins do mundo inteiro se reúnem em testes mortais, enquanto Orochimaru espreita nas sombras.</p>
+                        </div>
+                    </div>
+                    <div class="arco-item">
+                        <div class="arco-eps">Eps. 68–80</div>
+                        <div class="arco-info">
+                            <h4>Invasão de Konoha</h4>
+                            <p>O ataque planejado por Orochimaru acontece, culminando na batalha entre ele e o Terceiro Hokage.</p>
+                        </div>
+                    </div>
+                    <div class="arco-item">
+                        <div class="arco-eps">Eps. 81–100</div>
+                        <div class="arco-info">
+                            <h4>Busca por Tsunade</h4>
+                            <p>Naruto aprende o Rasengan viajando com Jiraiya para convencer Tsunade a se tornar a nova Hokage.</p>
+                        </div>
+                    </div>
+                    <div class="arco-item">
+                        <div class="arco-eps">Eps. 101–135</div>
+                        <div class="arco-info">
+                            <h4>Resgate de Sasuke</h4>
+                            <p>Os Genins de Konoha partem em uma missão desesperada para impedir Sasuke de se juntar a Orochimaru no Vale do Fim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: MUNDO NINJA -->
+        <section id="mundo" class="wiki-section">
+            <div class="section-title-bar">
+                <span class="section-icon">🌍</span>
+                <h2>O Mundo Ninja</h2>
+            </div>
+            <div class="wiki-content-box">
+                <div class="mundo-grid">
+                    <div class="mundo-card">
+                        <h4>🍃 Vila da Folha</h4>
+                        <p>Konohagakure. Vila principal da série, governada pelo Hokage. Considerada a mais forte do mundo.</p>
+                    </div>
+                    <div class="mundo-card">
+                        <h4>🏜️ Vila da Areia</h4>
+                        <p>Sunagakure. Aliada instável de Konoha, lar de Gaara e comandada pelo Kazekage.</p>
+                    </div>
+                    <div class="mundo-card">
+                        <h4>⚡ Chakra</h4>
+                        <p>Energia vital moldada para usar jutsus. Uma mistura de energia física com espiritual.</p>
+                    </div>
+                    <div class="mundo-card">
+                        <h4>🌀 Jutsus</h4>
+                        <p>Técnicas ninjas divididas em Ninjutsu (elementos), Genjutsu (ilusão) e Taijutsu (corpo a corpo).</p>
+                    </div>
+                    <div class="mundo-card">
+                        <h4>🐸 Sannins Lendários</h4>
+                        <p>O trio mais poderoso da história de Konoha: Tsunade, Jiraiya e Orochimaru.</p>
+                    </div>
+                    <div class="mundo-card">
+                        <h4>📜 Exame Chunin</h4>
+                        <p>Testes de sobrevivência cruéis feitos para avaliar e promover ninjas de baixo rank a líderes de esquadrão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: GALERIA -->
+        <section id="galeria" class="wiki-section">
+            <div class="section-title-bar">
+                <span class="section-icon">🖼️</span>
+                <h2>Galeria</h2>
+            </div>
+            <div class="wiki-content-box">
+                <div class="galeria-grid">
+                    <img class="img-galeria" src="mome1.jpg" alt="Galeria Naruto 1">
+                    <img class="img-galeria" src="mome2.jpg" alt="Galeria Naruto 2">
+                    <img class="img-galeria" src="mome3.jpg" alt="Galeria Naruto 3">
+                    <img class="img-galeria" src="mome4.jpg" alt="Galeria Naruto 3">
+                    <img class="img-galeria" src="mome5.jpg" alt="Galeria Naruto 3">
+                    <img class="img-galeria" src="mome6.jpg" alt="Galeria Naruto 3">
+                    <img class="img-galeria" src="mome7.jpg" alt="Galeria Naruto 3">
+                    <img class="img-galeria" src="mome8.jpg" alt="Galeria Naruto 3">
+                    <img class="img-galeria" src="mome9.jpg" alt="Galeria Naruto 3">
+                    <img class src="">
+                    <img class="img-galeria" src="mome10.jpg" alt="Galeria Naruto 3">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>🍥 Naruto Clássico Wiki — Criado por Davi! 🍥</p>
+    </footer>
+
+    <!-- MODAL DE IMAGEM -->
+    <div id="image-modal" class="modal">
+        <span class="modal-close" onclick="fecharModal()">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Imagem Expandida">
+    </div>
+
+    <script src="tara.js"></script>
+    <script>
+        // Animação de entrada rolando a página
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.wiki-section').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
